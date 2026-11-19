@@ -36,6 +36,12 @@ The time is first observation, not process birth; restarts do not move it.
 If SystemUI is absent, completion stays unknown. Capture end remains separate
 in the metadata panel, and playback still spans the full capture.
 
+Inter (400/500/600/700) and JetBrains Mono (400/500/600) are bundled as TrueType
+Compose resources in `shared/composeResources/font`, downloaded from Google Fonts
+(Inter v20 and JetBrains Mono v24, matching the reference families). No runtime
+Google Fonts/CDN connection is needed. Their SIL Open Font License notices are
+packaged in `shared/composeResources/files/licenses`.
+
 After UI changes, run `./kotlin build` and `./kotlin test -m shared`, then visually
 check desktop and web at different window widths, including horizontal scrolling,
 zoom, combined filters, short-bar time labels, and dark/light themes.
